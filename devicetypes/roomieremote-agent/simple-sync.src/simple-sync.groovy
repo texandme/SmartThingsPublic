@@ -1,15 +1,17 @@
 /**
  *  Simple Sync
  *
- *  Copyright 2015 Roomie Remote, Inc.
+ *  Copyright 2017 Roomie Remote, Inc.
  *
- *	Date: 2015-09-22
+ *	Date: 2017-05-04
  */
 metadata
 {
 	definition (name: "Simple Sync", namespace: "roomieremote-agent", author: "Roomie Remote, Inc.")
     {
 		capability "Media Controller"
+		
+		command "getAllActivities"
 	}
 
 	// simulator metadata
@@ -22,7 +24,7 @@ metadata
     {
 		standardTile("mainTile", "device.status", width: 1, height: 1, icon: "st.Entertainment.entertainment11")
         {
-        	state "default", label: "Simple Sync", icon: "st.Home.home2", backgroundColor: "#00a0dc"
+        	state "default", label: "Simple Sync", icon: "st.Home.home2", backgroundColor: "#55A7FF"
 		}
         
     	def detailTiles = ["mainTile"]
